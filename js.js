@@ -67,7 +67,7 @@ function getSelected() {
 
 submitBtn.addEventListener("click", () => {
   const answer = getSelected();
-
+  window.navigator.vibrate(100);
   if (answer) {
     if (answer === quizData[currentQuiz].correct) {
       score++;
